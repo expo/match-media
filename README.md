@@ -18,7 +18,7 @@
 
 <!-- Body -->
 
-TL;DR: [Demo](App.js);
+TL;DR: [Demo](App.js)
 
 ## 🏁 Setup
 
@@ -32,7 +32,7 @@ yarn add @expo/match-media
 
 ## ⚽️ Usage
 
-Import the polyfill at the top of your file before using the [`window.matchMedia` API][[match-media].
+Import the polyfill at the top of your file before using the [`window.matchMedia` API][match-media].
 
 ```js
 import '@expo/match-media';
