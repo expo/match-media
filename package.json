@@ -2,6 +2,7 @@
   "name": "@expo/match-media",
   "version": "0.0.0-alpha.0",
   "sideEffects": true,
+  "private": false,
   "description": "Universal polyfill for match media API using Expo APIs on mobile",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -10,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/expo/match-media.git"
   },
+  "files": [
+    "build"
+  ],
   "bugs": {
     "url": "https://github.com/expo/match-media/issues"
   },
