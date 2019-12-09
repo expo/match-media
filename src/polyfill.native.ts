@@ -53,6 +53,7 @@ class MediaQuery {
     return mediaQuery.match(this.query, {
       type: "screen",
       orientation: this.orientation.toLowerCase(),
+      ...windowDimensions,
       "device-width": windowDimensions.width,
       "device-height": windowDimensions.height,
     });
