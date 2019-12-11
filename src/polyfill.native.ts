@@ -49,10 +49,13 @@ class MediaQuery {
 
   // @ts-ignore
   public get matches(): boolean {
+    const windowDimensions = Dimensions.get("window");
     return mediaQuery.match(this.query, {
       type: "screen",
       orientation: this.orientation.toLowerCase(),
-      ...Dimensions.get("window")
+      ...windowDimensions,
+      "device-width": windowDimensions.width,
+      "device-height": windowDimensions.height,
     });
   }
 
