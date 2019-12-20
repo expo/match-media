@@ -49,7 +49,7 @@
     "@unimodules/core": "*"
   },
   "peerDependencies": {
-    "expo": "^35.0.1",
+    "expo": "^36.0.2",
     "react-native": "*"
   },
   "jest": {
@@ -60,13 +60,13 @@
     "@typescript-eslint/parser": "^2.7.0",
     "eslint": "^6.6.0",
     "eslint-config-universe": "^2.0.0",
-    "expo": "^35.0.1",
+    "expo": "^36.0.2",
     "expo-module-scripts": "^1.1.1",
     "jest-expo": "^35.0.0",
     "prettier": "^1.19.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.1.tar.gz",
     "react-native-web": "^0.11.7",
     "react-responsive": "^8.0.1"
   }
