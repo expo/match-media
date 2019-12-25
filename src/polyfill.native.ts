@@ -2,7 +2,7 @@ import { Subscription } from "@unimodules/core";
 import mediaQuery from "css-mediaquery";
 import * as ScreenOrientation from "expo/build/ScreenOrientation/ScreenOrientation";
 import { Dimensions } from "react-native";
-import { awaitCatcher, awaitCatcherAsync } from "await-catcher";
+import { awaitCatcherAsync } from "await-catcher";
 
 type Listener = (context: MediaQuery) => any;
 
