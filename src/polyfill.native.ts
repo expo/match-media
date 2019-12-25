@@ -2,7 +2,7 @@ import { Subscription } from "@unimodules/core";
 import mediaQuery from "css-mediaquery";
 import * as ScreenOrientation from "expo/build/ScreenOrientation/ScreenOrientation";
 import { Dimensions } from "react-native";
-
+import { awaitCatcherAsync } from "await-catcher";
 type Listener = (context: MediaQuery) => any;
 
 class MediaQuery {
@@ -14,11 +14,13 @@ class MediaQuery {
   private unsubscribe: Subscription;
 
   constructor(private query: string) {
-    // @ts-ignore
-    (async () => {
-      const { orientation } = await ScreenOrientation.getOrientationAsync();
-      this.updateListeners({ orientation });
-    })();
+    // notice we don't need an async function
+    // Also if an error occurs, await-catcher will handle it.
+    awaitCatcherAsync(
+       ScreenOrientation.getOrientationAsync(), 
+       (data, error) => this.updateListeners({ orientation: data.orientation }); 
+    );
+    
 
     this.unsubscribe = ScreenOrientation.addOrientationChangeListener(
       ({ orientationInfo: { orientation } }) => {

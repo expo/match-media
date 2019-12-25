@@ -43,7 +43,8 @@
   "author": "Expo",
   "license": "MIT",
   "dependencies": {
-    "css-mediaquery": "^0.1.2"
+    "css-mediaquery": "^0.1.2",
+    "await-catcher": "^1.1.2"
   },
   "unimodulePeerDependencies": {
     "@unimodules/core": "*"
