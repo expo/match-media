@@ -44,7 +44,7 @@ class MediaQuery {
 
   public removeListener(listener: Listener) {
     const index = this.listeners.indexOf(listener);
-    if (index !== -1) this.listeners.splice(index);
+    if (index !== -1) this.listeners.splice(index, 1);
   }
 
   // @ts-ignore
