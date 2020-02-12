@@ -1,6 +1,6 @@
 {
   "name": "@expo/match-media",
-  "version": "0.0.0-alpha.2",
+  "version": "0.0.0-alpha.3",
   "sideEffects": true,
   "private": false,
   "description": "Universal polyfill for match media API using Expo APIs on mobile",
@@ -49,7 +49,7 @@
     "@unimodules/core": "*"
   },
   "peerDependencies": {
-    "expo": "^35.0.1",
+    "expo": "^35.0.1 || ^36.0.0",
     "react-native": "*"
   },
   "jest": {
