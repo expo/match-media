@@ -1,6 +1,6 @@
 import { Subscription } from "@unimodules/core";
 import mediaQuery from "css-mediaquery";
-import * as ScreenOrientation from "expo/build/ScreenOrientation/ScreenOrientation";
+import { ScreenOrientation } from "expo";
 import { Dimensions } from "react-native";
 
 type Listener = (context: MediaQuery) => any;
@@ -55,7 +55,7 @@ class MediaQuery {
       orientation: this.orientation.toLowerCase(),
       ...windowDimensions,
       "device-width": windowDimensions.width,
-      "device-height": windowDimensions.height,
+      "device-height": windowDimensions.height
     });
   }
 
