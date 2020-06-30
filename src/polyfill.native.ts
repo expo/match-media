@@ -59,13 +59,13 @@ class MediaQuery {
           : "portrait",
       ...windowDimensions,
       "device-width": windowDimensions.width,
-      "device-height": windowDimensions.height,
+      "device-height": windowDimensions.height
     });
   }
 
   private updateListeners({ orientation }) {
     this.orientation = orientation;
-    this.listeners.forEach((listener) => {
+    this.listeners.forEach(listener => {
       listener(this);
     });
   }
@@ -73,5 +73,5 @@ class MediaQuery {
 
 if (window) {
   // @ts-ignore
-  window.matchMedia = (mediaQueryString) => new MediaQuery(mediaQueryString);
+  window.matchMedia = mediaQueryString => new MediaQuery(mediaQueryString);
 }
