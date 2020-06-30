@@ -59,7 +59,7 @@
     "eslint": "^6.6.0",
     "eslint-config-universe": "^2.0.0",
     "expo": "^38.0.0",
-    "expo-module-scripts": "^1.1.1",
+    "expo-module-scripts": "^1.2.0",
     "jest-expo": "^35.0.0",
     "prettier": "^1.19.1",
     "react": "^16.11.0",
