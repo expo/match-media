@@ -1,6 +1,6 @@
 {
   "name": "@expo/match-media",
-  "version": "0.0.0-alpha.5",
+  "version": "0.0.0-beta.1",
   "sideEffects": true,
   "private": false,
   "description": "Universal polyfill for match media API using Expo APIs on mobile",
