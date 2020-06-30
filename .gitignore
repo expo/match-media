@@ -2,3 +2,4 @@ node_modules/**/*
 /secret
 /.expo
 /build
+/web-build

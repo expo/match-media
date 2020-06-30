@@ -43,14 +43,12 @@
   "author": "Expo",
   "license": "MIT",
   "dependencies": {
-    "css-mediaquery": "^0.1.2"
-  },
-  "unimodulePeerDependencies": {
-    "@unimodules/core": "*"
+    "css-mediaquery": "^0.1.2",
+    "expo-screen-orientation": "^1.0.0"
   },
   "peerDependencies": {
-    "expo": "^35.0.1 || ^36.0.0",
-    "react-native": "*"
+    "@unimodules/core": "*",
+    "react-native": "~0.62"
   },
   "jest": {
     "preset": "jest-expo/universal"
@@ -60,14 +58,14 @@
     "@typescript-eslint/parser": "^2.7.0",
     "eslint": "^6.6.0",
     "eslint-config-universe": "^2.0.0",
-    "expo": "^35.0.1",
+    "expo": "^38.0.0",
     "expo-module-scripts": "^1.1.1",
     "jest-expo": "^35.0.0",
     "prettier": "^1.19.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
-    "react-native-web": "^0.11.7",
+    "react-native": "https://github.com/expo/react-native/archive/package/sdk-38.tar.gz",
+    "react-native-web": "~0.11.7",
     "react-responsive": "^8.0.1"
   }
 }
