@@ -54,18 +54,18 @@ class MediaQuery {
       type: "screen",
       orientation:
         this.orientation === ScreenOrientation.Orientation.LANDSCAPE_LEFT ||
-        ScreenOrientation.Orientation.LANDSCAPE_RIGHT
+        this.orientation === ScreenOrientation.Orientation.LANDSCAPE_RIGHT
           ? "landscape"
           : "portrait",
       ...windowDimensions,
       "device-width": windowDimensions.width,
-      "device-height": windowDimensions.height
+      "device-height": windowDimensions.height,
     });
   }
 
   private updateListeners({ orientation }) {
     this.orientation = orientation;
-    this.listeners.forEach(listener => {
+    this.listeners.forEach((listener) => {
       listener(this);
     });
   }
@@ -73,5 +73,5 @@ class MediaQuery {
 
 if (window) {
   // @ts-ignore
-  window.matchMedia = mediaQueryString => new MediaQuery(mediaQueryString);
+  window.matchMedia = (mediaQueryString) => new MediaQuery(mediaQueryString);
 }

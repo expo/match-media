@@ -1,5 +1,6 @@
 {
-    "expo": {
-        "entryPoint": "expo/AppEntry"
-    }
+  "expo": {
+    "slug": "matchmedia",
+    "entryPoint": "expo/AppEntry"
+  }
 }
