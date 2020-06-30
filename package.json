@@ -1,6 +1,6 @@
 {
   "name": "@expo/match-media",
-  "version": "0.0.0-beta.1",
+  "version": "0.0.0-beta.2",
   "sideEffects": true,
   "private": false,
   "description": "Universal polyfill for match media API using Expo APIs on mobile",
@@ -44,10 +44,10 @@
   "license": "MIT",
   "dependencies": {
     "css-mediaquery": "^0.1.2",
-    "expo-screen-orientation": "^1.0.0"
+    "expo-screen-orientation": "~1.1.1"
   },
   "peerDependencies": {
-    "@unimodules/core": "*",
+    "@unimodules/core": "~5.3.0",
     "react-native": "~0.62"
   },
   "jest": {
