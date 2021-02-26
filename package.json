@@ -40,11 +40,7 @@
   "license": "MIT",
   "dependencies": {
     "css-mediaquery": "^0.1.2",
-    "expo-screen-orientation": "~2.1.0"
-  },
-  "peerDependencies": {
-    "@unimodules/core": "*",
-    "react-native": "*"
+    "expo-screen-orientation": "^2.1.0"
   },
   "jest": {
     "preset": "jest-expo/universal"
