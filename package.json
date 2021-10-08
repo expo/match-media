@@ -39,13 +39,16 @@
   "author": "Expo",
   "license": "MIT",
   "dependencies": {
-    "css-mediaquery": "^0.1.2",
-    "expo-screen-orientation": "^2.1.0"
+    "css-mediaquery": "^0.1.2"
+  },
+  "peerDependencies": {
+    "expo-screen-orientation": "*"
   },
   "jest": {
     "preset": "jest-expo/universal"
   },
   "devDependencies": {
+    "expo-screen-orientation": "^2.1.0",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
     "@typescript-eslint/eslint-plugin": "^4.2.0",
