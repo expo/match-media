@@ -3,3 +3,4 @@ node_modules/**/*
 /.expo
 /build
 /web-build
+./yarn.lock
