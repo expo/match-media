@@ -28,8 +28,6 @@ Install `@expo/match-media` in your project.
 yarn add @expo/match-media
 ```
 
-> If you're using a React Native app that wasn't bootstrapped with the `expo-cli` then you'll need to install and link the `expo` module to use this package.
-
 ## ⚽️ Usage
 
 Import the polyfill at the top of your file before using the [`window.matchMedia` API][match-media].
