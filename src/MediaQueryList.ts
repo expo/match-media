@@ -1,7 +1,7 @@
-import { Subscription } from "@unimodules/core";
-import mediaQuery from "css-mediaquery";
-import * as ScreenOrientation from "expo-screen-orientation";
-import { Dimensions } from "react-native";
+import mediaQuery from 'css-mediaquery';
+import type { Subscription } from "expo-modules-core";
+import * as ScreenOrientation from 'expo-screen-orientation';
+import { Dimensions } from 'react-native';
 
 type Listener = (context: MediaQueryList) => any;
 
@@ -22,7 +22,7 @@ export default class MediaQueryList /* extends MediaQueryList */ {
       try {
         const orientation = await ScreenOrientation.getOrientationAsync();
         this.updateListeners({ orientation });
-      } catch (_) {}
+      } catch {}
     })();
 
     this.unsubscribe = ScreenOrientation.addOrientationChangeListener(
