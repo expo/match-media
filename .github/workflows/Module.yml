@@ -10,12 +10,12 @@ on:
       # If this isn't defined then all PR tests will be run twice
       - master
     paths:
-      - '*'
-      - '!*.md'
+      - "*"
+      - "!*.md"
   pull_request:
     paths:
-      - '*'
-      - '!*.md'
+      - "*"
+      - "!*.md"
 
 jobs:
   test:
@@ -24,7 +24,7 @@ jobs:
       matrix:
         # Run tests with all of these node versions/systems :]
         # node-version: [8.x, 10.x, 12.x]
-        node-version: [10.x]
+        node-version: [16.x]
         # os: [ubuntu-latest, windows-latest, macOS-latest]
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
