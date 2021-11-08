@@ -55,6 +55,7 @@
     "@typescript-eslint/parser": "^5.3.1",
     "eslint": "^8.2.0",
     "eslint-config-universe": "^8.0.0",
+    "eslint-plugin-react": "^7.26.1",
     "expo": "~43.0.0",
     "expo-module-scripts": "^2.0.0",
     "expo-screen-orientation": "^4.0.3",
