@@ -1,6 +1,7 @@
 {
   "extends": "expo-module-scripts/tsconfig.base",
   "compilerOptions": {
+    "module": "CommonJS",
     "outDir": "./build"
   },
   "include": ["./src"],

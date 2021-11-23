@@ -1,5 +1,5 @@
-import { Subscription } from "@unimodules/core";
 import mediaQuery from "css-mediaquery";
+import type { Subscription } from "expo-modules-core";
 import * as ScreenOrientation from "expo-screen-orientation";
 import { Dimensions } from "react-native";
 
@@ -22,7 +22,7 @@ export default class MediaQueryList /* extends MediaQueryList */ {
       try {
         const orientation = await ScreenOrientation.getOrientationAsync();
         this.updateListeners({ orientation });
-      } catch (_) {}
+      } catch {}
     })();
 
     this.unsubscribe = ScreenOrientation.addOrientationChangeListener(
@@ -66,13 +66,13 @@ export default class MediaQueryList /* extends MediaQueryList */ {
           : "portrait",
       ...windowDimensions,
       "device-width": windowDimensions.width,
-      "device-height": windowDimensions.height
+      "device-height": windowDimensions.height,
     });
   }
 
   private updateListeners({ orientation }) {
     this.orientation = orientation;
-    this.listeners.forEach(listener => {
+    this.listeners.forEach((listener) => {
       listener(this);
     });
   }
