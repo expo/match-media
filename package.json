@@ -42,8 +42,8 @@
     "css-mediaquery": "^0.1.2"
   },
   "peerDependencies": {
-    "expo-modules-core": "^0.4.7",
-    "expo-screen-orientation": "^4.0.3"
+    "expo-modules-core": "^0.6.3",
+    "expo-screen-orientation": "^4.1.1"
   },
   "jest": {
     "preset": "jest-expo/universal"
@@ -54,9 +54,9 @@
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",
     "eslint-plugin-react": "^7.26.1",
-    "expo": "~43.0.0",
+    "expo": "~44.0.3",
     "expo-module-scripts": "^2.0.0",
-    "expo-screen-orientation": "^4.0.3",
+    "expo-screen-orientation": "^4.1.1",
     "jest-expo": "^43.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
