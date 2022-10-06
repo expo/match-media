@@ -22,10 +22,10 @@ TL;DR: [Demo](App.js)
 
 ## 🏁 Setup
 
-Install `@expo/match-media` in your project.
+Install `@expo/match-media` and `expo-screen-orientation` in your project.
 
 ```sh
-yarn add @expo/match-media
+npx expo install @expo/match-media expo-screen-orientation
 ```
 
 ## ⚽️ Usage

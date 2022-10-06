@@ -1,6 +1,6 @@
 {
   "name": "@expo/match-media",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "sideEffects": true,
   "description": "Universal polyfill for match media API using Expo APIs on mobile",
   "main": "build/index.js",
@@ -42,8 +42,8 @@
     "css-mediaquery": "^0.1.2"
   },
   "peerDependencies": {
-    "expo-modules-core": "^0.6.3",
-    "expo-screen-orientation": "^4.1.1"
+    "expo": "*",
+    "expo-screen-orientation": "*"
   },
   "jest": {
     "preset": "jest-expo/universal"
